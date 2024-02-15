@@ -23,7 +23,7 @@ func main() {
 
 	resp, err := http.Get(url)
 	if err != nil {
-		log.Fatalf("Error fetching joke: %v", err)
+		log.Fatalf("Error while sending request, check internet connection!")
 	}
 	defer resp.Body.Close()
 
